@@ -3,7 +3,7 @@ module "ec2" {
 }
 
 module "iam-policy-s3" {
-  source = "./modules/iam-policy-s3"
+  source             = "./modules/iam-policy-s3"
   iam_policy_s3-name = var.name
   iam_policy_s3-path = var.path
 }
